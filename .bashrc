@@ -8,3 +8,6 @@ alias zshshell='chsh -s /bin/zsh'
 cht.sh -help
 echo "   searching with:  /~snapshot/r   look for snapshot in all cheat sheets"
 
+source <(kubectl completion bash)
+alias k=kubectl
+complete -F __start_kubectl k
